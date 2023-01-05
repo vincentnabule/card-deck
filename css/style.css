@@ -1,0 +1,82 @@
+.card_outline{
+	/* --width: 10em;
+	--height: var(var(--width)*1.4);
+	width: var(--width);
+	height: var(--height); */
+	width: 100px;
+	height: 140px;
+	padding: 5px;
+	background-color: red !important;
+
+}
+/*  */
+.face-value-end {
+	margin-right: 8px !important;
+}
+
+.face-value {
+	margin-left: 10px !important;
+}
+
+.face-value img {
+	margin-top: -15px !important;
+}
+
+/* .black-jack {
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+	border-style: groove;
+	border-color: black;
+	
+} */
+
+.other-section {
+	width: 150px;
+	height: 250px;
+	/* background-image: url('../images/heart-48.png'); */
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	margin-left: 25px;
+	margin-top: -10px;
+	background-color: rgb(252, 5, 5);
+}
+
+.card-back {
+	background-image: url('../images/card-blue.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.inner-circle {
+	width: 150px;
+	height: 270px;
+	margin-top: -10px;
+	/* background-image: url('../images/jo.png'); */
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	border-style: groove;
+	border-color: red;
+	/* border: 1px; */
+}
+
+.inner-circles {
+
+	/* margin: 20px; */
+	/* margin-left: 10%; */
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+	/* border-color: white; */
+	border-style: groove;
+	background-image: url('images/heart-48.png');
+	background-repeat: no-repeat;
+	/* background-repeat: repeat(2, 1fr); */
+	/* background-size: cover; */
+	/* background-size: auto; */
+	background-size: contain;
+	background-position: center;
+	/* background-color: blue; */
+}

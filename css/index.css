@@ -1,0 +1,144 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.card_outline {
+    --width: 11em;
+    --height: calc(var(--width)*1.5);
+    width: var(--width);
+    height: var(--height);
+    padding: 5px;
+    border: 1px solid black;
+    color: black;
+    position: relative;
+}
+
+.face_value {
+    margin-left: 3px !important;
+}
+
+.face_value p {
+    margin-left: 4px;
+    font-size: 25px;
+}
+
+.face_value img {
+    margin-top: -45px;
+    width: 20px;
+    height: 30px;
+}
+
+.face_value_down {
+    float: right;
+    transform: rotate(180deg);
+}
+
+.face_value_down p {
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.face_value_down img {
+    width: 20px;
+    height: 30px;
+    margin-top: -50px;
+}
+
+.other_section {
+    --wid: 8em;
+    --hgt: calc(var(--wid)*0.8);
+    width: var(--wid);
+    height: var(--hgt);
+    /* background-image: url("../images/club.svg"); */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+}
+
+.inner_section {
+    --wid: 8em;
+    --hgt: calc(var(--wid)*0.8);
+    width: var(--wid);
+    height: var(--hgt);
+}
+
+.sp_cards {
+    padding: 2px;
+    /* background-image: url("../images/kc.svg"); */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+.joker {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: .1em;
+    margin-left: -10px;
+}
+
+.back_side {
+    background-image: url('../images/card-blue.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Flip */
+.card_out {
+    position: relative;
+    --width: 11em;
+    --height: calc(var(--width)*1.5);
+    width: var(--width);
+    height: var(--height);
+    padding: 5px;
+    /* border: 1px solid black; */
+    color: black;
+    
+}
+
+.my_card {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.my_card:hover {
+    transform: rotateY(180deg);
+}
+
+.back_card {
+    position: absolute;
+    width: 101% !important;
+    height: 101% !important;
+    background-image: url('../images/card-blue.jpg');
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front_card {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+/*  */
+.playing:hover {
+    cursor: pointer;
+}
+
+@media screen and(min-screen: 768px) {
+    .card_outline {
+        --width: 100px;
+        --height: calc(var(--width)*1.4);
+        width: var(--width) !important;
+        height: var(--height);
+    }
+}
