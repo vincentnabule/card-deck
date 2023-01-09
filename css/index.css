@@ -1,144 +1,244 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
+	list-style: none;
+	text-decoration: none;
 }
 
-.card_outline {
-    --width: 11em;
-    --height: calc(var(--width)*1.5);
-    width: var(--width);
-    height: var(--height);
-    padding: 5px;
-    border: 1px solid black;
-    color: black;
-    position: relative;
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-color: antiquewhite;
+	background-image: url('images/F5.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.face_value {
-    margin-left: 3px !important;
+#hImage1 {
+	width: 150px;
+	height: 70px;
 }
 
-.face_value p {
-    margin-left: 4px;
-    font-size: 25px;
+.blackBG {
+	background-color: black !important;
 }
 
-.face_value img {
-    margin-top: -45px;
-    width: 20px;
-    height: 30px;
+.infom h2 {
+	font-size: 14px;
+	font-family: Algerian;
 }
 
-.face_value_down {
-    float: right;
-    transform: rotate(180deg);
+.slideImage {
+	width: 100%;
+	height: 150px;
 }
 
-.face_value_down p {
-    margin-left: 5px;
-    font-size: 25px;
+.imgDiv {
+	border-radius: 5px;
 }
 
-.face_value_down img {
-    width: 20px;
-    height: 30px;
-    margin-top: -50px;
+.hTitle {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	text-shadow: #ccc;
+	font-family: Algerian;
+	font-weight: bold;
+	padding: 2px;
 }
 
-.other_section {
-    --wid: 8em;
-    --hgt: calc(var(--wid)*0.8);
-    width: var(--wid);
-    height: var(--hgt);
-    /* background-image: url("../images/club.svg"); */
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: contain;
+#sticker {
+	width: 120px;
+	float: right !important;
+	margin-right: 4%;
+	
+	position: absolute;
+	align-items: center !important;
 }
 
-.inner_section {
-    --wid: 8em;
-    --hgt: calc(var(--wid)*0.8);
-    width: var(--wid);
-    height: var(--hgt);
+.balk marquee {
+	color: white;
+	font-size: large;
 }
 
-.sp_cards {
-    padding: 2px;
-    /* background-image: url("../images/kc.svg"); */
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
+.lg {
+	font-weight: unset;
 }
 
-.joker {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    letter-spacing: .1em;
-    margin-left: -10px;
+.statistics p {
+	margin: 0;
 }
 
-.back_side {
-    background-image: url('../images/card-blue.jpg');
-    background-position: center;
-    background-size: cover;
+.plans {
+	border-style: groove;
+	border-radius: 7px;
+	border: 3px solid red;
+	border-bottom: orange;
+	border-left: blue;
 }
 
-/* Flip */
-.card_out {
-    position: relative;
-    --width: 11em;
-    --height: calc(var(--width)*1.5);
-    width: var(--width);
-    height: var(--height);
-    padding: 5px;
-    /* border: 1px solid black; */
-    color: black;
-    
+.plans h5 {
+	font-size: 18px !important;
+	text-decoration: underline;
 }
 
-.my_card {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease;
+p .awy {
+	margin-right: 10px !important;
 }
 
-.my_card:hover {
-    transform: rotateY(180deg);
+p .hm {
+	margin-left: 10px !important;
 }
 
-.back_card {
-    position: absolute;
-    width: 101% !important;
-    height: 101% !important;
-    background-image: url('../images/card-blue.jpg');
-    background-position: center;
-    background-size: cover;
-    backface-visibility: hidden;
-    border-radius: 10px;
+.predict {
+	text-align: center;
+	font-weight: bolder;
 }
 
-.front_card {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    border-radius: 10px;
+.fa {
+	font-size: 20px !important;
+	color: #ccc !important;
 }
 
-/*  */
-.playing:hover {
-    cursor: pointer;
+.fa :hover,
+.fa a:hover,
+.footer a:hover {
+	color: blue !important;
 }
 
-@media screen and(min-screen: 768px) {
-    .card_outline {
-        --width: 100px;
-        --height: calc(var(--width)*1.4);
-        width: var(--width) !important;
-        height: var(--height);
-    }
+#smlghide {
+	display: none;
+}
+
+.cRights {
+	text-align: center;
+	font-size: 15px;
+	height: 60px;
+	color: white;
+	width: 100%;
+	margin-bottom: -15px;
+}
+
+.watermarked {
+	position: relative;
+	overflow: hidden !important;
+}
+
+.watermarked::before {
+	position: absolute;
+	left: 5%;
+
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	transform: rotate(-9deg);
+	content: attr(data-watermark);
+
+	opacity: 0.5;
+	line-height: 3em;
+	letter-spacing: 2px;
+	color: red;
+}
+
+@media screen and (min-width: 350px) {
+	.infom h2 {
+		font-size: 17px;
+	}
+}
+
+@media screen and (min-width: 390px) {
+	.infom h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.slideImage {
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.infom h2 {
+		font-size: 25px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.infom h2 {
+		font-size: 30px;
+	}
+
+	.slideImage {
+		height: 300px;
+	}
+
+	.G-Logs {
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		gap: 5px;
+	}
+
+	.Plan1 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		gap: 5px;
+	}
+
+	p .awy {
+		margin-right: 30px !important;
+	}
+
+	p .hm {
+		margin-left: 30px !important;
+	}
+
+	#smlghide {
+		display: block;
+	}
+
+	#mdhide {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#hImage1 {
+		width: 200px;
+		height: 100px;
+	}
+
+	.G-Logs {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2px;
+	}
+
+	.watermarked::before {
+		left: 3%;
+		top: 2%;
+
+		transform: rotate(-10deg);
+	}
+
+	.Plan1 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	#smlghide {
+		display: none;
+	}
+
+	#mdhide {
+		display: block;
+	}
+
+	p .awy {
+		margin-right: 50px !important;
+	}
+
+	p .hm {
+		margin-left: 50px !important;
+	}
 }

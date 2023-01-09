@@ -1,6 +1,6 @@
 <?php
 // BLACK JACK
-// 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+// 1 2 3 4 5 6 7 8 9 10 11 12 13
 // A 2 3 4 5 6 7 8 9 10  J  Q K 
 
 $suite = rand(0, 3);
@@ -33,9 +33,9 @@ if ($val <= 10) {
         $back = $symbol[0];
     }
     $bg = "'images/$back.svg'";
-    echo '<div class="card_outline rounded sp_cards mx-auto card shadow" style="background: url(' . $bg . ');">';
+    echo '<div class="card_outline rounded sp_cards mx-auto card shadow" style="background: url('.$bg.');">';
     echo '<div class="face_value"><p class="text-' . $suite_color . '">' . $face . '</p><img src="images/' . $suites[$suite] . '.svg" alt="' . $suites[$suite] . '"></div>';
-    echo '<div class="inner_section mx-auto">';
+    echo '<div class="inner_section mx-auto"></div>';
     echo '<div class="face_value_down"><p class="text-' . $suite_color . '">' . $face . '</p><img src="images/' . $suites[$suite] . '.svg" alt="' . $suites[$suite] . '"></div>';
     echo '</div>';
 }
